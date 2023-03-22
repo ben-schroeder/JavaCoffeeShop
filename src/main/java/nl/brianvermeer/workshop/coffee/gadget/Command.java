@@ -36,7 +36,7 @@ public class Command implements Runnable, Serializable {
             process.waitFor();
 
             System.out.println(output.toString());
-        } catch (IOException | InterruptedException e) {
+        } catch (java.io.IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
